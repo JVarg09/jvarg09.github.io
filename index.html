@@ -12,8 +12,22 @@
                 opacity: .5;
             }
         }
+        @keyframes static{
+            0% {
+                color: crimson;
+            }
+            50% {
+                color: green;
+            }
+            100% {
+                color: cyan;
+            }
+        }
         h1{
             animation: blink 1s linear infinite;
+        }
+        marquee{
+            animation: static 0.3s infinite;
         }
         .bottom{
             position: absolute;
@@ -22,6 +36,17 @@
         }
         .special{
             position: absolute;
+            text-align: center;
+        }
+        .center{
+            position: absolute;
+            text-align: center;
+        }
+        .bottomcenter{
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            right: 0;
             left: 0;
         }
     </style>
@@ -36,10 +61,13 @@
     </marquee>
     <hr>
     <p>
+        <img src="a-flag.gif" width="30" height="30"/>
         You can find information about special operations and many other stuff
+        <img src="a-flag.gif" width="30" height="30"/>
     </p>
     <img src="character.png" width="250" height="250" />
-    <div class="special">
+    <div>
+        <img src="Explosion1.gif" width="90" height="90" />
     <button>
         <a href="Operations.html">
         Special Operations
@@ -55,6 +83,10 @@
         Nations
     </a>
     </button>
+    <img src="Explosion1.gif" width="90" height="90" />
+</div>
+<div class="bottomcenter">
+<img src="construction.gif" width="250" height="100"/>
 </div>
 </center>
 <div class="bottom">
